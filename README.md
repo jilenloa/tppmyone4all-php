@@ -6,7 +6,7 @@ use MyOne4All\Exceptions\TppException;
 use MyOne4All\Models\DataBundle;
 use MyOne4All\NetworkCodes;
 
-$tppClient = new \MyOne4All\Client("apikey", "apisecret", "retailer");
+$tppClient = new TppClient("apikey", "apisecret", "retailer");
 
 echo $tppClient->getBalance(); # 0.0
 
