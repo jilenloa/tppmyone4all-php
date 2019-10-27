@@ -1,0 +1,560 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "bundles": [
+    {
+      "category": "DAILY",
+      "network_id": 4,
+      "plan_id": "DAILY_20MB",
+      "plan_name": "DAILY_20MB",
+      "price": "0.5000",
+      "type": "DATA_BUNDLE",
+      "validity": "1",
+      "volume": "20 MB"
+    },
+    {
+      "category": "DAILY",
+      "network_id": 4,
+      "plan_id": "DAILY_50MB",
+      "plan_name": "DAILY_50MB",
+      "price": "1.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "1",
+      "volume": "50 MB"
+    },
+    {
+      "category": "DAILY",
+      "network_id": 4,
+      "plan_id": "DAILY_120MB",
+      "plan_name": "DAILY_120MB",
+      "price": "2.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "1",
+      "volume": "120 MB"
+    },
+    {
+      "category": "WEEKLY",
+      "network_id": 4,
+      "plan_id": "WEEKLY_60MB",
+      "plan_name": "WEEKLY_60MB",
+      "price": "2.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "7",
+      "volume": "60 MB"
+    },
+    {
+      "category": "WEEKLY",
+      "network_id": 4,
+      "plan_id": "WEEKLY_180MB",
+      "plan_name": "WEEKLY_180MB",
+      "price": "3.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "7",
+      "volume": "180 MB"
+    },
+    {
+      "category": "WEEKLY",
+      "network_id": 4,
+      "plan_id": "WEEKLY_300MB",
+      "plan_name": "WEEKLY_300MB",
+      "price": "5.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "7",
+      "volume": "300 MB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 4,
+      "plan_id": "MONTHLY_400MB",
+      "plan_name": "MONTHLY_400MB",
+      "price": "10.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30",
+      "volume": "400 MB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 4,
+      "plan_id": "MONTHLY_1GB",
+      "plan_name": "MONTHLY_1GB",
+      "price": "20.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30",
+      "volume": "1 GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 4,
+      "plan_id": "MONTHLY_2.5GB",
+      "plan_name": "MONTHLY_2.5GB",
+      "price": "40.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30",
+      "volume": "2.5 GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 4,
+      "plan_id": "MONTHLY_4GB",
+      "plan_name": "MONTHLY_4GB",
+      "price": "60.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "45",
+      "volume": "4 GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 4,
+      "plan_id": "MONTHLY_6GB",
+      "plan_name": "MONTHLY_6GB",
+      "price": "80.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "45",
+      "volume": "6 GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 4,
+      "plan_id": "MONTHLY_10GB",
+      "plan_name": "MONTHLY_10GB",
+      "price": "120.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "45",
+      "volume": "10 GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 4,
+      "plan_id": "MONTHLY_15GB",
+      "plan_name": "MONTHLY_15GB",
+      "price": "150.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30",
+      "volume": "15 GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 4,
+      "plan_id": "MONTHLY_200GB",
+      "plan_name": "MONTHLY_200GB",
+      "price": "399.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30",
+      "volume": "200 GB"
+    },
+    {
+      "category": "SPECIAL",
+      "network_id": 4,
+      "plan_id": "YOUTUBE_50MB",
+      "plan_name": "YOUTUBE_50MB",
+      "price": "0.5000",
+      "type": "DATA_BUNDLE",
+      "validity": "1",
+      "volume": "50 MB"
+    },
+    {
+      "category": "SPECIAL",
+      "network_id": 4,
+      "plan_id": "YOUTUBE_300MB",
+      "plan_name": "YOUTUBE_300MB",
+      "price": "3.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "15",
+      "volume": "3000 MB"
+    },
+    {
+      "category": "SPECIAL",
+      "network_id": 4,
+      "plan_id": "LIFESTYLE",
+      "plan_name": "LIFESTYLE",
+      "price": "5.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "15",
+      "volume": "20 MB"
+    },
+    {
+      "category": "SPECIAL",
+      "network_id": 4,
+      "plan_id": "MIDNIGHT_3G",
+      "plan_name": "MIDNIGHT_3G",
+      "price": "1.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "3AM-5AM",
+      "volume": "UNLIMITED"
+    },
+    {
+      "category": "SPECIAL",
+      "network_id": 4,
+      "plan_id": "MIDNIGHT",
+      "plan_name": "MIDNIGHT",
+      "price": "2.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "12AM-5AM",
+      "volume": "UNLIMITED"
+    },
+    {
+      "category": "DAILY",
+      "network_id": 6,
+      "plan_id": "DAILY_25MB",
+      "plan_name": "DAILY_25MB",
+      "price": "0.5000",
+      "type": "DATA_BUNDLE",
+      "validity": "1",
+      "volume": "25 MB"
+    },
+    {
+      "category": "DAILY",
+      "network_id": 6,
+      "plan_id": "DAILY_60MB",
+      "plan_name": "DAILY_60MB",
+      "price": "1.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "1",
+      "volume": "60 MB"
+    },
+    {
+      "category": "WEEKLY",
+      "network_id": 6,
+      "plan_id": "WEEKLY_450MB",
+      "plan_name": "WEEKLY_450MB",
+      "price": "5.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "7",
+      "volume": "450 MB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 6,
+      "plan_id": "MONTHLY_550MB",
+      "plan_name": "MONTHLY_550MB",
+      "price": "10.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30",
+      "volume": "550 MB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 6,
+      "plan_id": "MONTHLY_2GB",
+      "plan_name": "MONTHLY_2GB",
+      "price": "20.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30",
+      "volume": "2 GB"
+    },
+    {
+      "category": "MONTHLY ",
+      "network_id": 6,
+      "plan_id": "MONTHLY_5.5GB",
+      "plan_name": "MONTHLY_5.5GB",
+      "price": "50.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30",
+      "volume": "5.5 GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_1.7GB_Plan",
+      "plan_name": "BUNDLE_1.7GB_Plan",
+      "price": "10.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "1.7GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_3GB_Plan",
+      "plan_name": "BUNDLE_3GB_Plan",
+      "price": "15.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "3GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_4.2GB_Plan",
+      "plan_name": "BUNDLE_4.2GB_Plan",
+      "price": "20.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "4.2GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_5.5GB_Plan",
+      "plan_name": "BUNDLE_5.5GB_Plan",
+      "price": "25.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "5.5GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_7GB_Plan",
+      "plan_name": "BUNDLE_7GB_Plan",
+      "price": "30.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "7GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_10GB_Plan",
+      "plan_name": "BUNDLE_10GB_Plan",
+      "price": "40.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "10GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_15GB_Plan",
+      "plan_name": "BUNDLE_15GB_Plan",
+      "price": "50.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "15GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_20GB_Plan",
+      "plan_name": "BUNDLE_20GB_Plan",
+      "price": "60.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "20GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_New 30GB_Plan",
+      "plan_name": "BUNDLE_New 30GB_Plan",
+      "price": "80.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "60days",
+      "volume": "30GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_40GB PLAN_Plan",
+      "plan_name": "BUNDLE_40GB PLAN_Plan",
+      "price": "100.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "90days",
+      "volume": "40GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_75GB PLAN_Plan",
+      "plan_name": "BUNDLE_75GB PLAN_Plan",
+      "price": "150.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "90days",
+      "volume": "75GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_UNLIMITED_Plan",
+      "plan_name": "BUNDLE_UNLIMITED_Plan",
+      "price": "300.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "unlimited"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_Night Personal_Plan",
+      "plan_name": "BUNDLE_Night Personal_Plan",
+      "price": "25.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30Days",
+      "volume": "3Gb"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_Day_Business_Plan",
+      "plan_name": "BUNDLE_Day_Business_Plan",
+      "price": "30.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "3GB"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_Campus_400MB_Plan",
+      "plan_name": "BUNDLE_Campus_400MB_Plan",
+      "price": "5.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "400Mb"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_Campus_850MB_Plan",
+      "plan_name": "BUNDLE_Campus_850MB_Plan",
+      "price": "10.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "850Mb"
+    },
+    {
+      "category": "MONTHLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_Campus_1.5GB_Plan",
+      "plan_name": "BUNDLE_Campus_1.5GB_Plan",
+      "price": "15.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "30days",
+      "volume": "1.5GB"
+    },
+    {
+      "category": "WEEKLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_50MB_Plan",
+      "plan_name": "BUNDLE_50MB_Plan",
+      "price": "1.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "7days",
+      "volume": "50MB"
+    },
+    {
+      "category": "WEEKLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_200MB_Plan",
+      "plan_name": "BUNDLE_200MB_Plan",
+      "price": "2.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "7days",
+      "volume": "200MB"
+    },
+    {
+      "category": "WEEKLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_350MB_Plan",
+      "plan_name": "BUNDLE_350MB_Plan",
+      "price": "3.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "7days",
+      "volume": "350MB"
+    },
+    {
+      "category": "WEEKLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_700MB_Plan",
+      "plan_name": "BUNDLE_700MB_Plan",
+      "price": "5.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "7days",
+      "volume": "700MB"
+    },
+    {
+      "category": "WEEKLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_3.7GB_Plan",
+      "plan_name": "BUNDLE_3.7GB_Plan",
+      "price": "10.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "3days",
+      "volume": "3.7GB"
+    },
+    {
+      "category": "WEEKLY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_Wkend_3Gb_Plan",
+      "plan_name": "BUNDLE_Wkend_3Gb_Plan",
+      "price": "8.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "7Days",
+      "volume": "3Gb"
+    },
+    {
+      "category": "DAILY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_40MB_Plan",
+      "plan_name": "BUNDLE_40MB_Plan",
+      "price": "0.5000",
+      "type": "DATA_BUNDLE",
+      "validity": "1day",
+      "volume": "40MB"
+    },
+    {
+      "category": "DAILY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_100MB_Plan",
+      "plan_name": "BUNDLE_100MB_Plan",
+      "price": "1.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "1day",
+      "volume": "100MB"
+    },
+    {
+      "category": "DAILY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_300MB_Plan",
+      "plan_name": "BUNDLE_300MB_Plan",
+      "price": "3.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "3days",
+      "volume": "300MB"
+    },
+    {
+      "category": "DAILY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_750MB_Plan",
+      "plan_name": "BUNDLE_750MB_Plan",
+      "price": "3.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "1day",
+      "volume": "750MB"
+    },
+    {
+      "category": "DAILY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_Nite_500MB_Plan",
+      "plan_name": "BUNDLE_Nite_500MB_Plan",
+      "price": "1.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "1Day",
+      "volume": "500MB"
+    },
+    {
+      "category": "DAILY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_Campus_50MB_Plan",
+      "plan_name": "BUNDLE_Campus_50MB_Plan",
+      "price": "1.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "1day",
+      "volume": "50MB"
+    },
+    {
+      "category": "DAILY",
+      "network_id": 3,
+      "plan_id": "BUNDLE_Campus_100MB_Plan",
+      "plan_name": "BUNDLE_Campus_100MB_Plan",
+      "price": "2.0000",
+      "type": "DATA_BUNDLE",
+      "validity": "5days",
+      "volume": "100MB"
+    }
+  ],
+  "message": "Found list of bundles",
+  "status": "OK",
+  "status-code": "00"
+}

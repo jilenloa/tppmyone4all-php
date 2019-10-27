@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "status": "FAIL",
+  "message": "Error detecting network for 02456679",
+  "status-code": "06"
+}

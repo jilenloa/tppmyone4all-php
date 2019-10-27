@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "status": "FAIL",
+  "message": "Mobile money transaction failed",
+  "trxn": "809003324634425623",
+  "status-code": "01",
+  "local-trxn-code": "dsfdfs345346344sdfsfs",
+  "balance_before": 50,
+  "balance_after": 0,
+  "pending": false
+}

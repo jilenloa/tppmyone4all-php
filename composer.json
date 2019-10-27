@@ -1,0 +1,30 @@
+{
+    "name": "jilenloa/tppmyone4all-php",
+    "description": "PHP Library to integration myone4all tpp service easily",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jimmy Ilenloa",
+            "email": "jilenloa@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "MyOne4All\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MyOne4All\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.5",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8.36",
+        "symfony/process": "^3.0"
+    }
+}

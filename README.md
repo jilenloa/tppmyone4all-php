@@ -69,8 +69,9 @@ foreach($data_pages as $data_package){
 }
 ```
 
+Install package using Composer
 ```bash
-composer require prymo/tppmyone4all-php
+composer require jilenloa/tppmyone4all-php
 ```
 
 After installing, you need to require Composer's autoloader:

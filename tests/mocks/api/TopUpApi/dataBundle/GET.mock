@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "status": "OK",
+  "message": "You have successfully recharged 0245667942 with DAILY_20MB, you were charged GHS 0.5 and your current balance is GHS 0.00",
+  "trxn": "809003324634425624",
+  "status-code": "00",
+  "local-trxn-code": "dsfdfs145346344sdfsfs",
+  "balance_before": 0.5,
+  "balance_after": 0
+}

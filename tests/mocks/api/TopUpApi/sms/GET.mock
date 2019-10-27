@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+
+{
+  "status": "OK",
+  "message": "You have successfully sent sms to 233245667942, you were charged GHS 0.05 and your current balance is GHS 9.19",
+  "trxn": "ba4a48a0-493a-11e9-8965-6d34cd3f74bf",
+  "status-code": "00",
+  "local-trxn-code": "sms11",
+  "balance_before": 9.24,
+  "balance_after": 9.19
+}
