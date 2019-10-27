@@ -1,6 +1,11 @@
 Tpp One4All Library for PHP
 =======================
 ```php
+use MyOne4All\TppClient;
+use MyOne4All\Exceptions\TppException;
+use MyOne4All\Models\DataBundle;
+use MyOne4All\NetworkCodes;
+
 $tppClient = new \MyOne4All\Client("apikey", "apisecret", "retailer");
 
 echo $tppClient->getBalance(); # 0.0
@@ -49,6 +54,18 @@ if($momo_response->isSuccessful()){
 }else{
     echo "Failed: ".$momo_response->getErrorMessage();
 }
+
+$sms_message = "hello world";
+$sms_sender_id = "One4All";
+$transaction_reference = "sms11";
+$sms_response = $tppClient->sendSms("0572180376", $sms_message, $sms_sender_id, $transaction_reference);
+if($sms_response->isSuccessful()){
+    echo "sms message queued";
+}else{
+    echo "Failed: ".$sms_response->getErrorMessage();
+}
+
+
 
 echo NetworkCodes::AUTO_DETECT; # 0
 echo NetworkCodes::MTN_GH; # 4

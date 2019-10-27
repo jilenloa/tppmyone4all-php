@@ -115,7 +115,7 @@ class TppClientTest extends TestCase
     }
 
     public function testSms(){
-        $response = $this->tppClient->sendSms("057218037", "hello world", "One4All", "sms11");
+        $response = $this->tppClient->sendSms("0572180376", "hello world", "One4All", "sms11");
         $this->assertInstanceOf(TppResponse::class, $response);
         $this->assertTrue($response->isSuccessful());
     }
