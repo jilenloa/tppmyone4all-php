@@ -5,6 +5,9 @@ Tpp One4All Library for PHP
 [![Build Status](https://img.shields.io/travis/jilenloa/tppmyone4all-php.svg?style=flat-square)](https://travis-ci.org/jilenloa/tppmyone4all-php)
 [![Total Downloads](https://img.shields.io/packagist/dt/jilenloa/tppmyone4all-php.svg?style=flat-square)](https://packagist.org/packages/jilenloa/tppmyone4all-php)
 
+This library makes it easy for PHP developers to integrate with One4All TPP online service.
+
+It's supported on PHP 5.5+
 
 ```php
 use MyOne4All\TppClient;

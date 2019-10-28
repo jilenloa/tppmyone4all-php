@@ -8,3 +8,12 @@ php:
 before_script:
 - composer install --no-interaction --prefer-source --dev
 - npm install -g mockserver
+
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key: "2fbda3196675f4c290a0cbe1f48b74774b7767f2"
+
+  on:
+      repo: jilenloa/tppmyone4all-php
+      tags: true
