@@ -13,7 +13,7 @@ before_deploy:
 deploy:
   provider: releases
   skip_cleanup: true
-  api_key: "2fbda3196675f4c290a0cbe1f48b74774b7767f2"
+  api_key: "db8763471279e62a5eae15cf68674528d16075a4"
   file:
     - build/artifacts/tppmyone4all-php.phar
     - build/artifacts/tppmyone4all-php.zip
