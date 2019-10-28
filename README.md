@@ -1,5 +1,11 @@
 Tpp One4All Library for PHP
 =======================
+
+[![Latest Version](https://img.shields.io/github/release/jilenloa/tppmyone4all-php.svg?style=flat-square)](https://github.com/jilenloa/tppmyone4all-php/releases)
+[![Build Status](https://img.shields.io/travis/jilenloa/tppmyone4all-php.svg?style=flat-square)](https://travis-ci.org/jilenloa/tppmyone4all-php)
+[![Total Downloads](https://img.shields.io/packagist/dt/jilenloa/tppmyone4all-php.svg?style=flat-square)](https://packagist.org/packages/jilenloa/tppmyone4all-php)
+
+
 ```php
 use MyOne4All\TppClient;
 use MyOne4All\Exceptions\TppException;
