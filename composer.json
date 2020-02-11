@@ -1,8 +1,9 @@
 {
     "name": "jilenloa/tppmyone4all-php",
     "description": "PHP Library to integration myone4all tpp service easily",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Jimmy Ilenloa",
