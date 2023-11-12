@@ -25,6 +25,9 @@ class TppClient
 
     const COUNTRY_GHANA = 'gh';
     const COUNTRY_CONGO = 'drc';
+    const WALLET_TYPE_ECREDIT = 'e-credit';
+    const WALLET_TYPE_MOBILE_MONEY_CREDIT = 'mobile-money-credit-account';
+    const WALLET_TYPE_MOBILE_MONEY_COLLECTION = 'mobile-money-collection-account';
 
     /**
      * Client constructor.
@@ -71,8 +74,8 @@ class TppClient
      * @return string|double
      * @throws ClientException
      */
-    public function getBalance(){
-        $response = $this->getHttpClient()->get("/api/TopUpApi/balance");
+    public function getBalance($wallet_type = self::WALLET_TYPE_ECREDIT){
+        $response = $this->getHttpClient()->get("/api/TopUpApi/balance?type={$wallet_type}");
         $response_array = json_decode($response->getBody()->getContents(), true);
         return $response_array['balance'];
     }
@@ -119,6 +122,21 @@ class TppClient
         return new TppResponse($response_array);
     }
 
+    public function sendFlexiDataBundle($recipient, $amount, $data_code, $transaction_reference, $network){
+        $params = array(
+            'retailer' => $this->retailer,
+            'recipient' => $recipient,
+            'data_code' => $data_code,
+            'network' => $network,
+            'trxn' => $transaction_reference,
+            'amount' => $amount
+        );
+
+        $response = $this->getHttpClient()->get("/api/TopUpApi/dataBundle?".http_build_query($params));
+        $response_array = json_decode($response->getBody()->getContents(), true);
+        return new TppResponse($response_array);
+    }
+
     /**
      * @param $recipient
      * @param $amount
@@ -141,15 +159,20 @@ class TppClient
      * @param $payer_number
      * @param $amount
      * @param $transaction_reference
+     * @param int $delay_seconds
      * @return TppResponse
      * @throws ClientException
      */
-    public function receiveMobileMoney($payer_number, $amount, $transaction_reference){
+    public function receiveMobileMoney($payer_number, $amount, $transaction_reference, $delay_seconds = 0){
         $params = array(
             'amount' => $amount,
             'recipient' => $payer_number,
             'trxn' => $transaction_reference
         );
+
+        if($delay_seconds && $delay_seconds > 0){
+            $params['delay'] = $delay_seconds;
+        }
         $response = $this->getHttpClient()->get("/api/TopUpApi/c2b?".http_build_query($params));
         $response_array = json_decode($response->getBody()->getContents(), true);
         return new TppResponse($response_array);

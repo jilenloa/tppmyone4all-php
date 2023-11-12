@@ -13,10 +13,18 @@ class NetworkCodes
 {
     const AUTO_DETECT = 0;
 
+    /**
+     * @deprecated
+     */
     const AIRTEL_GH = 1;
+    const AT_GH = 1;
     const EXPRESSO_GH = 2;
     const GLO_GH = 3;
     const MTN_GH = 4;
+
+    /**
+     * @deprecated
+     */
     const TIGO_GH = 5;
     const VODAFONE_GH = 6;
 
