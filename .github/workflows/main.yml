@@ -19,6 +19,7 @@ jobs:
           php-version: 5.6
 
       - name: Install Composer dependencies
+        uses: php-actions/composer@v6
         run: composer install --no-interaction --prefer-source
 
       - name: Install npm packages
