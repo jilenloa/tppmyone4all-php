@@ -2,7 +2,7 @@ Tpp One4All Library for PHP
 =======================
 
 [![Latest Version](https://img.shields.io/github/release/jilenloa/tppmyone4all-php.svg?style=flat-square)](https://github.com/jilenloa/tppmyone4all-php/releases)
-[![Build Status](https://img.shields.io/travis/jilenloa/tppmyone4all-php.svg?style=flat-square)](https://travis-ci.org/jilenloa/tppmyone4all-php)
+[![Build Status](https://img.shields.io/github/workflow/status/jilenloa/tppmyone4all-php/CI?style=flat-square)](https://github.com/jilenloa/tppmyone4all-php/actions)
 [![Total Downloads](https://img.shields.io/packagist/dt/jilenloa/tppmyone4all-php.svg?style=flat-square)](https://packagist.org/packages/jilenloa/tppmyone4all-php)
 
 This library makes it easy for PHP developers to integrate with One4All TPP online service.
@@ -156,6 +156,15 @@ foreach($data_pages as $data_package){
     echo $data_package->category; # DAILY
     echo $data_package->network_id; # 4
     echo $data_package->volume; # 20 MB
+}
+```
+
+## Query Transaction Status
+```php
+$transaction_reference = "trans03423423";
+$transaction_status = $tppClient->getTransactionStatus($transaction_reference);
+if($transaction_status == TppClient::TRANSACTION_STATUS_COMPLETED){
+    echo "transaction successful";
 }
 ```
 

@@ -29,6 +29,10 @@ class TppClient
     const WALLET_TYPE_MOBILE_MONEY_CREDIT = 'mobile-money-credit-account';
     const WALLET_TYPE_MOBILE_MONEY_COLLECTION = 'mobile-money-collection-account';
 
+    const TRANSACTION_STATUS_COMPLETED = 'COMPLETED';
+    const TRANSACTION_STATUS_FAILED = 'FAILED';
+    const TRANSACTION_STATUS_PENDING = 'INPROGRESS';
+
     /**
      * Client constructor.
      * @param $key

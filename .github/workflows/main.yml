@@ -31,8 +31,8 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: |
           gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
-          gh release create v${{ github.run_number }} \
+          gh release create v${{ steps.build.outputs.version }} \
             build/artifacts/tppmyone4all-php.phar \
             build/artifacts/tppmyone4all-php.zip \
-            --title "Release v${{ github.run_number }}" \
+            --title "Release v${{ steps.build.outputs.version }}" \
             --notes "Release notes for v${{ github.run_number }}"
