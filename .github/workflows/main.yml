@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    outputs:
+      version: '1.0.3'
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -26,9 +29,6 @@ jobs:
 
       - name: Build package
         run: make package
-
-        outputs:
-          version: '1.0.3'
 
       - name: Deploy
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
