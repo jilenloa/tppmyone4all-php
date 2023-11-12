@@ -109,8 +109,10 @@ When working with USSD sessions, it is important there is a delay between the cl
 $transaction_reference = "trans03423423";
 $amount = 1;
 $payer_number = "0245667XXX";
+$narration = "Food Purchase";
+$delay = 5;
 // the last parameter represents the number of seconds to delay the payment prompt
-$momo_response = $tppClient->receiveMobileMoney($payer_number, $amount, $transaction_reference, 5);
+$momo_response = $tppClient->receiveMobileMoney($payer_number, $amount, $transaction_reference, $delay, $narration);
 if($momo_response->isSuccessful()){
     // check transaction status later to confirm receipt
     echo "mobile money payment request initiated";

@@ -163,12 +163,16 @@ class TppClient
      * @return TppResponse
      * @throws ClientException
      */
-    public function receiveMobileMoney($payer_number, $amount, $transaction_reference, $delay_seconds = 0){
+    public function receiveMobileMoney($payer_number, $amount, $transaction_reference, $delay_seconds = 0, $narration = null){
         $params = array(
             'amount' => $amount,
             'recipient' => $payer_number,
             'trxn' => $transaction_reference
         );
+
+        if($narration){
+            $params['narration'] = $narration;
+        }
 
         if($delay_seconds && $delay_seconds > 0){
             $params['delay'] = $delay_seconds;
