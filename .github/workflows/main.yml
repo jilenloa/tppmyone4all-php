@@ -19,7 +19,6 @@ jobs:
           php-version: 5.6
 
       - name: Install Composer dependencies
-        uses: php-actions/composer@v6
         run: composer install --no-interaction --prefer-source
 
       - name: Install npm packages
@@ -28,12 +27,15 @@ jobs:
       - name: Build package
         run: make package
 
+        outputs:
+          version: '1.0.3'
+
       - name: Deploy
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: |
           gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
-          gh release create v${{ steps.build.outputs.version }} \
+          gh release create v${{ needs.build.outputs.version }} \
             build/artifacts/tppmyone4all-php.phar \
             build/artifacts/tppmyone4all-php.zip \
-            --title "Release v${{ steps.build.outputs.version }}" \
-            --notes "Release notes for v${{ github.run_number }}"
+            --title "Release v${{ needs.build.outputs.version }}" \
+            --notes "Release notes for v${{ needs.build.outputs.version }}"
